@@ -7,46 +7,63 @@
  </head>
 <body>
 <h1>Znacznik <div><h1>
-&lt;div style="cecha: wartość; cecha2: wartość2..."&gt;...&lt;/div>&gt;
-1. Element blokowy (DIV) jest elementem blokowym może zawierać wewnątrz siebie zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia obszerniejszych struktur.
-2. Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka.
-3. Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za pomocą arkusza stylów CSS.
-4. DIV odgrywa istotną rolę w grupowaniu wielu różnych elementów i pozycjonowaniu fragmentów dokumentu.
-ALIGN="ustawienie"
-Poziome ustawienie (wyrównanie) z uwzględnieniem otoczenia (zdeprecjonowane):
-center - wyśrodkowanie
-justify - wyrównanie do obu marginesów jednocześnie
-left - wyrównanie do lewej
-right - wyrównanie do prawej
-CLASS="klasa"
-Przypisuje nazwę klasy (CSS) lub nazwy klas do elementu, które muszą być rozdzielone białymi znakami
-DIR="kierunek"
-Kierunek tekstu:
-ltr - od lewej do prawej
-rtl - od prawej do lewej
-ID="nazwa"
-Przypisuje nazwę elementowi (identyfikator), która nie może się powtarzać w całym dokumencie
-LANG="język"
-Informacja o języku bazowym (np.: LANG="en" oznacza angielski, LANG="pl" - polski itd.)
-STYLE="styl"
-Informacje stylów (CSS)
-TITLE="tekst"
-Tekst pomocniczy
+&lt;div style="cecha: wartość; cecha2: wartość2..."&gt;...&lt;/div&gt;
+1. Element blokowy (DIV) jest elementem blokowym może zawierać wewnątrz siebie <br>
+ zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia <br>
+ obszerniejszych struktur. <br>
+2. Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w <br>
+ układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka. <br>
+3. Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za <br>
+ pomocą arkusza stylów CSS. <br>
+4. DIV odgrywa istotną rolę w grupowaniu wielu różnych elementów i pozycjonowaniu <br>
+ fragmentów dokumentu. <br>
+ALIGN="ustawienie" <br>
+Poziome ustawienie (wyrównanie) z uwzględnieniem otoczenia (zdeprecjonowane): <br>
+center - wyśrodkowanie <br>
+justify - wyrównanie do obu marginesów jednocześnie <br>
+left - wyrównanie do lewej <br>
+right - wyrównanie do prawej <br>
+CLASS="klasa" <br>
+Przypisuje nazwę klasy (CSS) lub nazwy klas do elementu, które muszą być rozdzielone białymi znakami <br>
+DIR="kierunek" <br>
+Kierunek tekstu: <br>
+ltr - od lewej do prawej <br>
+rtl - od prawej do lewej <br>
+ID="nazwa" <br>
+Przypisuje nazwę elementowi (identyfikator), która nie może się powtarzać w całym dokumencie <br>
+LANG="język"<br>
+Informacja o języku bazowym (np.: LANG="en" oznacza angielski, LANG="pl" - polski itd.) <br>
+STYLE="styl" <br>
+Informacje stylów (CSS) <br>
+TITLE="tekst" <br>
+Tekst pomocniczy <br>
 Zdarzenia:
-- onclick, ondblclick, onmousedown, onmouseup, onmouseover, onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-- Uwagi:
-- Znacznik otwierający: wymagany
-- Znacznik zamykający: wymagany
-Znacznik <SPAN>
-1. Elementy wyświetlanie w linii (SPAN) jest elementem liniowym nie mogą zawierać elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst.
-2. Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf <p> z zasady nie może zawierać elementów blokowych) tylko span.
-3. Wewnątrz DIV można oczywiście wpisać również SPAN.
-Składnia teoretyczna:
+- onclick, ondblclick, onmousedown, onmouseup, onmouseover, onmousemove,<br>
+ onmouseout, onkeypress, onkeydown, onkeyup <br>
+- Uwagi: <br>
+- Znacznik otwierający: wymagany <br>
+- Znacznik zamykający: wymagany <br>
+ <h1>Znacznik <SPAN> </h1> <br>
+1. Elementy wyświetlanie w linii (SPAN) jest elementem liniowym nie mogą zawierać <br>
+ elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst. <br>
+2. Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do <br>
+  wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf <p> z zasady <br>
+  nie może zawierać elementów blokowych) tylko span. <br>
+3. Wewnątrz DIV można oczywiście wpisać również SPAN. <br>
+Składnia teoretyczna: <br>
 <span style="cecha1: wartość1; cecha2: wartość2...">...</span>
-Opis: Znacznik <span>...</span> pozwala na objęcie pewnego większego fragmentu dokumentu. Pojedynczym znacznikiem <span>...</span> możemy objąć kilka różnych elementów, które są wyświetlane w linii (sam element SPAN tak właśnie jest wyświetlany), np. wytłuszczenie tekstu oraz kursywę. Element ten tak dobrze nadaje się do osadzania stylów, ponieważ sam w sobie nie ma określonego żadnego formatowania, które mogłoby kolidować z efektem, jaki chcemy uzyskać.
-Różnica między znacznikami DIV i SPAN
-Obydwa elementy służą jedynie do wyodrębniania części struktury dokumentu, aby docelowo na przykład poprzez arkusze styli osiągnąć zamierzony wygląd strony.
-Span'em wyodrębniamy elementy liniowe (najczęściej fragmenty tekstu) a divem blokowe (blokowe elementy, większe fragmenty struktury składające się na układ strony)
-Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii.
+Opis: <br>
+Znacznik <span>...</span> pozwala na objęcie pewnego większego fragmentu dokumentu.  <br>
+Pojedynczym znacznikiem <span>...</span> możemy objąć kilka różnych elementów, które <br>
+są wyświetlane w linii (sam element SPAN tak właśnie jest wyświetlany), np. wytłuszczenie <br>
+tekstu oraz kursywę. Element ten tak dobrze nadaje się do osadzania stylów, ponieważ sam w <br>
+sobie nie ma określonego żadnego formatowania, które mogłoby kolidować z efektem, jaki <br>
+chcemy uzyskać. <br>
+  <h1> Różnica między znacznikami DIV i SPAN </h1><br>
+Obydwa elementy służą jedynie do wyodrębniania części struktury dokumentu, aby docelowo <br>
+na przykład poprzez arkusze styli osiągnąć zamierzony wygląd strony. <br>
+Span'em wyodrębniamy elementy liniowe (najczęściej fragmenty tekstu) a divem blokowe <br>
+(blokowe elementy, większe fragmenty struktury składające się na układ strony) <br>
+Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii. <br>
 </body>
 </html>
